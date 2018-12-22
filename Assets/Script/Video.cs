@@ -14,6 +14,7 @@ public class Video : MonoBehaviour
 
 	private RenderTexture _renderTexture;
 	private bool _isPlaying = false;
+	private bool _preaparePlay = false;
 
 	private VideoPlayer.EventHandler onPrepareCompleted;
 
@@ -101,6 +102,12 @@ public class Video : MonoBehaviour
 		if (_videoPlayer.isPlaying)
 		{
 			_isPlaying = true;
+		}
+
+		if(!_preaparePlay)
+		{
+			_preaparePlay = true;
+			Play("Video/opening_movie.mp4");
 		}
 
 		// 判定动画播放完毕
