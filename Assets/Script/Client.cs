@@ -1,15 +1,39 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Client : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	public Button PlayBtn;
+	public Button PauseBtn;
+	public Button StopBtn;
+	public Video VideoInstance;
+	public Audio AudioInstance;
 	
+	void Start () {
+		PlayBtn.onClick.AddListener(PlayVideo);
+		PauseBtn.onClick.AddListener(StopVideo);
+		StopBtn.onClick.AddListener(StopVideo);
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
 	
 	}
+
+	void PlayVideo()
+	{
+
+	}
+
+	void PauseVideo()
+	{
+
+	}
+
+	void StopVideo()
+	{
+
+	}
+
 }
