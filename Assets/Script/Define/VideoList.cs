@@ -1,4 +1,7 @@
-﻿public class VideoList  {
+﻿using System.Collections;
+using System.Collections.Generic;
+
+public class VideoList  {
 
 	public string[] FirstWeek = new string[]{
 			"",

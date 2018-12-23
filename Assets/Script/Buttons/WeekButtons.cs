@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class WeekButtons : MonoBehaviour {
 	public Button[] weekButtonList;
-
+	private Video _videoPlayer;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +19,6 @@ public class WeekButtons : MonoBehaviour {
 
 	public void SetVideoPlayer(Video videoPlayer)
 	{
-
+		_videoPlayer = videoPlayer;
 	}
 }

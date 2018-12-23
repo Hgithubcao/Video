@@ -9,7 +9,7 @@ public class VideoButtons : MonoBehaviour {
 	public Button PauseBtn;
 	public Button StopBtn;
 
-	private Video videoPlayer;
+	private Video _videoPlayer;
 
 	void Start()
 	{
@@ -26,7 +26,7 @@ public class VideoButtons : MonoBehaviour {
 
 	public void SetVideoPlayer(Video videoPlayer)
 	{
-		videoPlayer = videoPlayer;
+		_videoPlayer = videoPlayer;
 	}
 
 	void PlayVideo()
