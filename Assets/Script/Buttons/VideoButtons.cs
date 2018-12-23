@@ -9,6 +9,8 @@ public class VideoButtons : MonoBehaviour {
 	public Button PauseBtn;
 	public Button StopBtn;
 
+	private Video videoPlayer;
+
 	void Start()
 	{
 		PlayBtn.onClick.AddListener(PlayVideo);
@@ -22,9 +24,13 @@ public class VideoButtons : MonoBehaviour {
 
 	}
 
+	public void SetVideoPlayer(Video videoPlayer)
+	{
+		videoPlayer = videoPlayer;
+	}
+
 	void PlayVideo()
 	{
-
 	}
 
 	void PauseVideo()

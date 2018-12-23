@@ -16,4 +16,9 @@ public class WeekButtons : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public void SetVideoPlayer(Video videoPlayer)
+	{
+
+	}
 }
